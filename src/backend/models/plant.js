@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
-
-const PlantsSchema = new Schema({
+var Plant = mongoose.model('Plant', {
     plantType: {
         type: String,
         required: true
@@ -33,5 +31,5 @@ const PlantsSchema = new Schema({
     }
 });
 
-module.exports = PlantsSchema;
+module.exports = { Plant };
 
