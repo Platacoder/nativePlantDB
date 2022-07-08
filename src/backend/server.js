@@ -25,6 +25,6 @@ server.listen(port, function () {
     console.log(`Server is up and running on port ${port}`)
 });
 
-app.use('/plants', plantsController);
+app.use('/api/plants', plantsController);
 
 
