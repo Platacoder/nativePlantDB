@@ -11,7 +11,7 @@ import { Observable } from "rxjs";
 export class PlantService {
     selectedPlant: Plant;
     plants: Observable<Plant[]>;
-    readonly baseURL: string = 'localhost:8000/plants';
+    readonly baseURL: string = 'http://localhost:8000/plants';
 
     constructor(private _http: HttpClient) {}
 
