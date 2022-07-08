@@ -1,4 +1,4 @@
-export interface Plant {
+export class Plant {
     _id: string;
     plantType: string;
     commonName: string;

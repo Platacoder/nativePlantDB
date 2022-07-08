@@ -5,16 +5,18 @@ import { Plant } from "../models/plant.model";
 import { Observable } from "rxjs";
 
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'
+}) 
 export class PlantService {
     selectedPlant: Plant;
-    plants: Plant[];
-    readonly baseURL: 'localhost:8000/plants';
+    plants: Observable<Plant[]>;
+    readonly baseURL: string = 'localhost:8000/plants';
 
     constructor(private _http: HttpClient) {}
 
-    getPlants(): Observable<Object> {
-        return this._http.get(this.baseURL)
+    getPlants(): Observable<Plant[]> {
+        return this._http.get(this.baseURL) as Observable<Plant[]>;
     }
 
 }
