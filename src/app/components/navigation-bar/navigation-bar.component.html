@@ -1,3 +1,18 @@
 <div class="header">
-    <h2 class="header-title">New Jersey Native Plants Database</h2>
+    <div class="header-logo-title-container">
+        <img class="header-logo" src="../../../assets/icons8-growing-plant-48.png">
+        <h2 class="header-title">Native Plant DB</h2>
+    </div>
+    <div class="header-options-container">
+        <a *ngIf="isSignedIn()">
+            Custom Plant List
+        </a>
+        <a>
+            Resources
+        </a>
+        <a>
+            Sign In
+        </a>
+    </div>
+    
 </div>

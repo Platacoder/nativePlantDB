@@ -12,8 +12,11 @@ export class NavigationBarComponent implements OnInit {
 
   ngOnInit() {
   }
-
   
+  //Place holder for now, need to build sign if functionality.
+  isSignedIn(){
+    return false;
+  }
   
 
 }
