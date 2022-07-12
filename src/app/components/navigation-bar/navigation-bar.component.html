@@ -4,15 +4,20 @@
         <h2 class="header-title">Native Plant DB</h2>
     </div>
     <div class="header-options-container">
-        <a *ngIf="isSignedIn()">
-            Custom Plant List
-        </a>
-        <a>
-            Resources
-        </a>
-        <a>
-            Sign In
-        </a>
+        <div *ngIf="isSignedIn()">
+            <a>
+                Custom Plant List
+            </a>
+        </div>
+        <div>
+            <a>
+                Resources
+            </a>
+        </div>
+        <div class="signIn-container">
+            <a>
+                Sign In
+            </a>
+        </div>
     </div>
-    
 </div>
